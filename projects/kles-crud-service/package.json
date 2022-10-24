@@ -1,0 +1,18 @@
+{
+  "name": "@3kles/kles-crud-service",
+  "version": "1.0.0",
+  "peerDependencies": {
+    "@angular/common": "^11.0.3",
+    "@angular/core": "^11.0.3"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "description": "This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.",
+  "main": "karma.conf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

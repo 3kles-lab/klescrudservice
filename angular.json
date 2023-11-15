@@ -72,18 +72,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "KlesCrudService:build"
+            "buildTarget": "KlesCrudService:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "KlesCrudService:build:production"
+              "buildTarget": "KlesCrudService:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "KlesCrudService:build"
+            "buildTarget": "KlesCrudService:build"
           }
         },
         "test": {

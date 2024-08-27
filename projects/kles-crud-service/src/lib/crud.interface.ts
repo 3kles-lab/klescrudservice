@@ -10,15 +10,15 @@ export interface IOption {
     responseType?: any;
 }
 
-export class IOptionBody implements IOption {
-    observe: 'body';
+export interface IOptionBody extends IOption {
+    observe?: 'body';
 }
 
-export class IOptionResponse implements IOption {
-    observe: 'response';
+export interface IOptionResponse extends IOption {
+    observe?: 'response';
 }
-export class IOptionEvents implements IOption {
-    observe: 'events';
+export interface IOptionEvents extends IOption {
+    observe?: 'events';
 }
 
 export interface ICrud<T> {

@@ -4,3 +4,4 @@
 
 export * from './lib/kles-crud-service.service';
 export * from './lib/kles-crud-service.module';
+export * from './lib/crud.interface';

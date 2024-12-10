@@ -1,18 +1,11 @@
 import { CommonModule } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { KlesCrudService } from './kles-crud-service.service';
 
 
 
 
-@NgModule({
-  declarations: [],
-  imports: [
-    HttpClientModule,
-    CommonModule
-  ],
-  providers: [KlesCrudService],
-  exports: []
-})
+@NgModule({ declarations: [],
+    exports: [], imports: [CommonModule], providers: [KlesCrudService, provideHttpClient(withInterceptorsFromDi())] })
 export class KlesCrudServiceModule { }

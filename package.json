@@ -1,6 +1,6 @@
 {
   "name": "@3kles/kles-crud-service",
-  "version": "17.1.1",
+  "version": "18.0.0",
   "scripts": {
     "build:lib": "ng build kles-crud-service --configuration production",
     "publish:lib": "cd dist/kles-crud-service && npm publish --registry 'http://192.168.111.61:8081/repository/npm-3kles/'  --force",
@@ -13,16 +13,16 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^17.0.2",
+    "@angular/animations": "^18.2.13",
     "@angular/cdk": "^17.0.0",
-    "@angular/common": "^17.0.2",
-    "@angular/compiler": "^17.0.2",
-    "@angular/core": "^17.0.2",
-    "@angular/forms": "^17.0.2",
+    "@angular/common": "^18.2.13",
+    "@angular/compiler": "^18.2.13",
+    "@angular/core": "^18.2.13",
+    "@angular/forms": "^18.2.13",
     "@angular/material": "^17.0.0",
-    "@angular/platform-browser": "^17.0.2",
-    "@angular/platform-browser-dynamic": "^17.0.2",
-    "@angular/router": "^17.0.2",
+    "@angular/platform-browser": "^18.2.13",
+    "@angular/platform-browser-dynamic": "^18.2.13",
+    "@angular/router": "^18.2.13",
     "@infor-up/m3-odin": "2.1.2",
     "@infor-up/m3-odin-angular": "2.1.2",
     "@ngx-translate/core": "^15.0.0",
@@ -34,9 +34,9 @@
     "zone.js": "~0.14.2"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^17.0.0",
-    "@angular/cli": "^17.0.0",
-    "@angular/compiler-cli": "^17.0.2",
+    "@angular-devkit/build-angular": "^18.2.12",
+    "@angular/cli": "^18.2.12",
+    "@angular/compiler-cli": "^18.2.13",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
     "codelyzer": "^6.0.0",
@@ -47,11 +47,11 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
-    "ng-packagr": "^17.0.0",
+    "ng-packagr": "^18.2.1",
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
-    "typescript": "~5.2.2",
+    "typescript": "~5.5.4",
     "tslib": "^2.0.0"
   }
 }

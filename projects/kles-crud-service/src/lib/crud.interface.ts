@@ -1,7 +1,10 @@
 import { Observable } from 'rxjs';
-import { HttpContext, HttpEvent, HttpResponse } from '@angular/common/http';
+import { HttpContext, HttpEvent, HttpHeaders, HttpResponse } from '@angular/common/http';
 
 export interface IOption {
+    headers?: HttpHeaders | {
+        [header: string]: string | string[];
+    };
     params?: any;
     context?: HttpContext;
     reportProgress?: boolean;

@@ -17,38 +17,54 @@ export class KlesCrudService<T> implements ICrud<T> {
   constructor(protected http: HttpClient, @Inject('url') protected url: string) {
   }
 
+  protected createHeaders(options: IOption): HttpHeaders {
+    if (options.headers) {
+      if (options.headers instanceof HttpHeaders) {
+        return options.headers.keys().reduce((acc, key) => {
+          return acc.append(key, (options.headers as HttpHeaders).getAll(key));
+        }, this.httpOptions.headers);
+      } else {
+        return Object.keys(options.headers).reduce((acc, key) => {
+          return acc.append(key, options.headers[key]);
+        }, this.httpOptions.headers);
+      }
+    } else {
+      return this.httpOptions.headers;
+    }
+  }
+
   list(options?: IOptionBody): Observable<T[] | T>;
   list(options?: IOptionEvents): Observable<HttpEvent<T>>;
   list(options?: IOptionResponse): Observable<HttpResponse<T[] | T>>;
   list(options?: IOption): Observable<T | T[]> | Observable<HttpEvent<T>> | Observable<HttpResponse<T | T[]>> {
-    return this.http.get<T[]>(this.url, { ...this.httpOptions, ...options });
+    return this.http.get<T[]>(this.url, { ...this.httpOptions, ...options, headers: this.createHeaders(options) });
   }
 
   get(id: any, options?: IOptionBody): Observable<T>;
   get(id: any, options?: IOptionEvents): Observable<HttpEvent<T>>;
   get(id: any, options?: IOptionResponse): Observable<HttpResponse<T>>;
   get(id: any, options?: IOption): Observable<T> | Observable<HttpEvent<T>> | Observable<HttpResponse<T>> {
-    return this.http.get<T>(`${this.url}/${id}`, { ...this.httpOptions, ...options });
+    return this.http.get<T>(`${this.url}/${id}`, { ...this.httpOptions, ...options, headers: this.createHeaders(options) });
   }
 
   create(t: any, options?: IOptionBody): Observable<T>;
   create(t: any, options?: IOptionEvents): Observable<HttpEvent<T>>;
   create(t: any, options?: IOptionResponse): Observable<HttpResponse<T>>;
   create(t: any, options?: IOption): Observable<T> | Observable<HttpEvent<T>> | Observable<HttpResponse<T>> {
-    return this.http.post<T>(this.url, t, { ...this.httpOptions, ...options });
+    return this.http.post<T>(this.url, t, { ...this.httpOptions, ...options, headers: this.createHeaders(options) });
   }
 
   update(id: any, t: T, options?: IOptionBody): Observable<T>;
   update(id: any, t: T, options?: IOptionEvents): Observable<HttpEvent<T>>;
   update(id: any, t: T, options?: IOptionResponse): Observable<HttpResponse<T>>;
   update(id: any, t: any, options?: IOption): Observable<T> | Observable<HttpEvent<T>> | Observable<HttpResponse<T>> {
-    return this.http.put<T>(`${this.url}/${id}`, t, { ...this.httpOptions, ...options });
+    return this.http.put<T>(`${this.url}/${id}`, t, { ...this.httpOptions, ...options, headers: this.createHeaders(options) });
   }
 
   delete(id: any, options?: IOptionBody): Observable<T>;
   delete(id: any, options?: IOptionEvents): Observable<HttpEvent<T>>;
   delete(id: any, options?: IOptionResponse): Observable<HttpResponse<T>>;
   delete(id: any, options?: IOption): Observable<T> | Observable<HttpEvent<T>> | Observable<HttpResponse<T>> {
-    return this.http.delete<T>(`${this.url}/${id}`, { ...this.httpOptions, ...options });
+    return this.http.delete<T>(`${this.url}/${id}`, { ...this.httpOptions, ...options, headers: this.createHeaders(options) });
   }
 }

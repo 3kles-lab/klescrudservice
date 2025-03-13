@@ -18,7 +18,7 @@ export class KlesCrudService<T> implements ICrud<T> {
   }
 
   protected createHeaders(options: IOption): HttpHeaders {
-    if (options.headers) {
+    if (options?.headers) {
       if (options.headers instanceof HttpHeaders) {
         return options.headers.keys().reduce((acc, key) => {
           return acc.append(key, (options.headers as HttpHeaders).getAll(key));

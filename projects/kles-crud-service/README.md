@@ -1,24 +1,44 @@
-# KlesCrudService
+[![pipeline status](http://gitlab.3kles.local/angular/klesmaterialheader/badges/master/pipeline.svg)](http://gitlab.3kles.local/angular/klesmaterialheader/-/commits/master)
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
+# @3kles/
 
-## Code scaffolding
+**kles-crud-service** is a component library to build `Material Angular Header`.
 
-Run `ng generate component component-name --project kles-crud-service` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project kles-crud-service`.
-> Note: Don't forget to add `--project kles-crud-service` or else it will be added to the default project in your `angular.json` file. 
+## Changelog
 
-## Build
+Check out the [changelog](./CHANGELOG.md) to check all the latest changes.
 
-Run `ng build kles-crud-service` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Install
 
-## Publishing
+### npm
 
-After building your library with `ng build kles-crud-service`, go to the dist folder `cd dist/kles-crud-service` and run `npm publish`.
+```
+npm install @3kles/kles-crud-service --save
+```
 
-## Running unit tests
+## How to use
 
-Run `ng test kles-crud-service` to execute the unit tests via [Karma](https://karma-runner.github.io).
+In the module
+```javascript
+import { KlesCrudServiceModule } from '@3kles/kles-crud-service';
+...
+@NgModule({
+    
+ imports: [
+    KlesCrudServiceModule,
+...
+ ]
 
-## Further help
+ ...
+})
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Tests
+
+```
+npm install
+npm test
+```
+## License
+
+[`MIT`](./LICENSE.md)

@@ -1,6 +1,6 @@
 {
   "name": "@3kles/kles-crud-service",
-  "version": "18.0.1",
+  "version": "18.0.2",
   "peerDependencies": {
     "@angular/common": "^18.2.13",
     "@angular/core": "^18.2.13"
@@ -17,10 +17,10 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/3kles-lab/kles-crud-service"
+    "url": "https://github.com/3kles-lab/klescrudservice"
   },
   "bugs": {
-    "url": "https://github.com/3kles-lab/kles-crud-service/issues"
+    "url": "https://github.com/3kles-lab/klescrudservice/issues"
   },
-  "homepage": "https://github.com/3kles-lab/kles-crud-service"
+  "homepage": "https://github.com/3kles-lab/klescrudservice"
 }

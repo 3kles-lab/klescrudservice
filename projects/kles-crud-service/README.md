@@ -1,8 +1,8 @@
-[![pipeline status](http://gitlab.3kles.local/angular/klesmaterialheader/badges/master/pipeline.svg)](http://gitlab.3kles.local/angular/klesmaterialheader/-/commits/master)
+
 
 # @3kles/
 
-**kles-crud-service** is a component library to build `Material Angular Header`.
+**kles-crud-service** is a service library.
 
 ## Changelog
 

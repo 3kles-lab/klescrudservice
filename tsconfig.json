@@ -19,13 +19,11 @@
       "dom"
     ],
     "paths": {
-      "kles-material-dynamicforms": [
-        "dist/kles-material-dynamicforms/kles-material-dynamicforms",
-        "dist/kles-material-dynamicforms"
+      "kles-crud-service": [
+        "dist/kles-crud-service"
       ],
-      "kles-material-dynamicforms/*": [
-        "dist/kles-material-dynamicforms/kles-material-dynamicforms",
-        "dist/kles-material-dynamicforms"
+      "kles-crud-service/*": [
+        "dist/kles-crud-service"
       ]
     },
     "useDefineForClassFields": false

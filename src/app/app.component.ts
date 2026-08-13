@@ -1,5 +1,5 @@
 
-import { CommonModule } from '@angular/common';
+
 import { Component, ViewEncapsulation } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
@@ -10,9 +10,8 @@ import { RouterOutlet } from '@angular/router';
   encapsulation: ViewEncapsulation.None,
   standalone: true,
   imports: [
-    CommonModule,
-    RouterOutlet,
-  ]
+    RouterOutlet
+]
 })
 export class AppComponent {
   title = 'KlesCRUDService';

@@ -2,8 +2,8 @@
   "name": "@3kles/kles-crud-service",
   "version": "20.0.0",
   "peerDependencies": {
-    "@angular/common": "^20.3.27",
-    "@angular/core": "^20.3.27"
+    "@angular/common": "^21.2.19",
+    "@angular/core": "^21.2.19"
   },
   "dependencies": {
     "tslib": "^2.0.0"

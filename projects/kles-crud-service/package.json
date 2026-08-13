@@ -1,6 +1,6 @@
 {
   "name": "@3kles/kles-crud-service",
-  "version": "19.0.0",
+  "version": "20.0.0",
   "peerDependencies": {
     "@angular/common": "^20.3.27",
     "@angular/core": "^20.3.27"

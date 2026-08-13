@@ -1,3 +1,13 @@
+# [21.0.0](http://gitlab.3kles.local/3kles/lib/angular/klescrudservice/compare/v20.0.0...v21.0.0) (2026-08-13)
+
+
+* feat!: Update to Angular 21 ([088ab69](http://gitlab.3kles.local/3kles/lib/angular/klescrudservice/commit/088ab69d9573d45f31082d955a0f11b11062e1b4))
+
+
+### BREAKING CHANGES
+
+* Angular 21 is now required.
+
 # [20.0.0](http://gitlab.3kles.local/3kles/lib/angular/klescrudservice/compare/v19.0.0...v20.0.0) (2026-08-13)
 
 

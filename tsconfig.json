@@ -1,7 +1,6 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "esModuleInterop": true,
@@ -16,16 +15,16 @@
     ],
     "paths": {
       "kles-crud-service": [
-        "dist/kles-crud-service"
+        "./dist/kles-crud-service"
       ],
       "kles-crud-service/*": [
-        "dist/kles-crud-service"
+        "./dist/kles-crud-service"
       ]
     },
     "useDefineForClassFields": false
   },
   "angularCompilerOptions": {
-    "fullTemplateTypeCheck": true,
+    "strictTemplates": true,
     "strictInjectionParameters": true
   }
 }

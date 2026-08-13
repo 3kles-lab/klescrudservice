@@ -4,7 +4,8 @@ import { HttpContext, HttpEvent, HttpResponse } from '@angular/common/http';
 export interface IOption {
     params?: any;
     context?: HttpContext;
-    reportProgress?: boolean;
+    reportUploadProgress?: boolean;
+    reportDownloadProgress?: boolean;
     withCredentials?: boolean;
     observe?: any;
     responseType?: any;
